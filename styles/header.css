@@ -7,6 +7,7 @@
   justify-content: space-between;
   height: 56px;
   background-color: var(--body-bgcolor);
+  z-index: 100;
 }
 
 /* Left section */
@@ -14,6 +15,12 @@
   display: flex;
   margin-left: 16px;
   align-items: center;
+}
+.menu{
+  background-color: var(--body-bgcolor);
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
 }
 .menu-logo{
   height: 24px;
@@ -39,9 +46,9 @@
   display: flex;
   flex: 1;
   height: 38.6333px;
-  background-color: var(--bgcolor);
+  background-color: var(--body-bgcolor);
   align-items: center;
-  padding-left: 20px;
+  padding-left: 15px;
   /* box-shadow:inset 1px 2px 5px #ffffff; */
 }
 /* border style middle section */
@@ -55,7 +62,7 @@
   outline: none;
   height: 26px;
   border: none;
-  background-color: var(--bgcolor);
+  background-color: var(--body-bgcolor);
   color:  var(--text-color);
   font-size: 18px;
   width: 0;         /* it is set so the default value of input element cancel in web and can shrink all  */
@@ -66,9 +73,10 @@
   color: var(--search-box-text);
 }
 .search-button{
+  position: relative;
   height: 39.633px;
   width: 70px;
-  background-color: var(--bgcolor);
+  background-color: var(--search);
   padding: 1px 8px;
   outline: none;
   cursor: pointer;
@@ -87,6 +95,9 @@
   height: 26px;
 }
 .voice-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 40px;
   background-color: var(--buttons);
@@ -95,10 +106,10 @@
   margin-left: 18px;
   outline: none;
   cursor: pointer;
+  position: relative;
 }
 .voice-search-icon{
   height: 24px;
-  margin-top: 4px;
 }
 
 /* right section */
@@ -111,15 +122,26 @@
   column-gap: 12.6px;
 }
 .upload-button{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   width: 40px;
-  padding: 8px;
+  padding: 8px 8px 8px 12px;
   border-radius: 50px;
 }
 .upload-icon{
   height: 24px;
 }
+.notification{
+  position: relative;
+}
 .notify-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   height: 40px;
   width: 40px;
   border-radius: 20px;
@@ -127,6 +149,28 @@
 .notify-icon{
   height: 24px;
 }
+
+.notify-count{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3.5px;
+  top:5px;
+  left: 20px;
+  right: 84px;
+  background-color: var(--notification);
+  border: 2px solid #fff;
+  min-width: 8px;
+  max-width: 18px;
+  height: 15.5px;
+  border-radius: 22px;
+  color: var(--body-bgcolor);
+  font-size: 12px;
+  line-height: 15.5px;
+  font-weight: 400;
+}
+
 .avtar-button{
   width: 48px;
   height: 36px;

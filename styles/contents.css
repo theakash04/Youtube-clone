@@ -1,0 +1,81 @@
+.video-contents{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 16px;
+  column-gap: 15px;
+  padding-right: 22px;
+}
+.video-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 12px;
+  min-width: 50px;
+  max-width: 700px;
+  width:100%;
+  background-color: var(--body-bgcolor);
+}
+.thumbnail{
+  position: relative;
+  aspect-ratio: 16/9;
+  min-width:50px;
+  max-width: 600px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.video-details{
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  font-family: Roboto, Arial;
+}
+.channel-img{
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  margin-right: 12px;
+}
+.Video-desc{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  flex: 1;
+  padding-right: 12px;
+}
+.video-title{
+  padding-bottom: 5px;
+  line-height: 22px;
+  max-height: 44px;
+  font-weight: 500;
+  font-size: 16.5px;
+  color: var(--text-color);
+}
+/* To hide a long video title */
+.video-title{
+  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+.channel-about{
+  padding-bottom: 3px;
+  color: var(--font-color-video-detail);
+}
+
+
+/* Video time stamp style */
+.timestamp{
+  position: absolute;
+  background-color: #000000b8;
+  color: var(--body-bgcolor);
+  font-size: 13px;
+  max-height: 1.3rem;
+  right: 17px;
+  bottom: 120px;
+  padding: 3px;
+  border-radius: 5px;
+}

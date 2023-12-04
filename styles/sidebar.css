@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   font-size: 10px;
+  z-index: 100;
 }
 
 .home-icon,.shorts-icon,.subs-icon,.you-icon{
@@ -16,9 +17,11 @@
   flex-direction: column;
   align-items: center;
   row-gap: 6px;
+  background-color: var(--body-bgcolor);
   padding-top: 16px;
   padding-bottom: 14px;
   width: 64px;
+  border-radius: 10px;
   height: 44px;
   cursor: pointer;
 }

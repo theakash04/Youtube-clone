@@ -1,0 +1,83 @@
+/* hover effects and the tooltips of page*/
+
+/* tooltips of header */
+.search-button > .tooltips{
+  position: absolute;
+  background-color: var(--tooltips);
+  color: var(--body-bgcolor);
+  padding: 10px 10px;
+  border-radius: 4px;
+  z-index: 100;
+  font-size: 12px;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;  /* this means that if the mouse hover over the tooltips it will not show and it will only show when we hover over search button */
+}
+/* Hover effect for tooltips */
+.search-button:hover > .tooltips, .voice-search:hover > .tooltips, .upload-button:hover > .tooltips, .notify-button:hover > .tooltips{
+  opacity: 1;
+}
+
+.voice-search > .tooltips{
+  position: absolute;
+  background-color: var(--tooltips);
+  color: var(--body-bgcolor);
+  padding: 10px 10px;
+  border-radius: 4px;
+  z-index: 100;
+  font-size: 12px;
+  bottom: -50px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+  pointer-events: none;  
+}
+
+.upload-button > .tooltips{
+  position: absolute;
+  background-color: var(--tooltips);
+  color: var(--body-bgcolor);
+  padding: 10px 10px;
+  border-radius: 4px;
+  left: -5px;
+  z-index: 100;
+  font-size: 12px;
+  bottom: -50px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.notify-button > .tooltips{
+  position: absolute;
+  background-color: var(--tooltips);
+  color: var(--body-bgcolor);
+  padding: 10px 10px;
+  border-radius: 4px;
+  z-index: 100;
+  font-size: 12px;
+  bottom: -50px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+  pointer-events: none; 
+}
+
+
+/* hover effects of header, sidebar and chipset container */
+.menu,.voice-search,.search-button,.upload-button,.notify-button,.chipsets,.back{
+  transition: background-color 0.15s;
+}
+.menu:hover,.voice-search:hover,.search-button:hover,.upload-button:hover,.notify-button:hover,.chipsets:hover,.back:hover{
+  background-color: var(--hover);
+}
+
+.home-icon,.shorts-icon,.subs-icon,.you-icon{
+  transition: background-color 0.15s;
+}
+
+.home-icon:hover,.shorts-icon:hover,.subs-icon:hover,.you-icon:hover{
+  background-color: #f0f0f0;
+}

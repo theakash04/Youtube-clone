@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/Hover.css" />
+    <link rel="stylesheet" href="styles/chips-contents.css" />
+    <link rel="stylesheet" href="styles/contents.css" />
+    <link rel="stylesheet" href="styles/media.css">
   </head>
 
   <body>
@@ -26,7 +30,9 @@
     <!-- Left section of header -->
     <div class="header">
       <div class="left-section">
-        <img class="menu-logo" src="Resources/icons/hamburger-menu.svg" />
+        <div class="menu">
+          <img class="menu-logo" src="Resources/icons/hamburger-menu.svg" />
+        </div>
         <img class="youtube-logo" src="Resources/icons/youtube-logo.svg" />
       </div>
 
@@ -37,12 +43,14 @@
         </div>
         <button class="search-button">
           <img class="search-icon" src="Resources/icons/search.svg" />
+          <div class="tooltips">Search</div>
         </button>
         <button class="voice-search">
           <img
             class="voice-search-icon"
             src="Resources/icons/voice-search-icon.svg"
           />
+          <div class="tooltips">Search with yor voice</div>
         </button>
       </div>
 
@@ -50,10 +58,15 @@
       <div class="right-section">
         <button class="upload-button">
           <img class="upload-icon" src="Resources/icons/upload.svg" />
+          <div class="tooltips">Create</div>
         </button>
-        <button class="notify-button">
-          <img class="notify-icon" src="Resources/icons/notifications.svg" />
-        </button>
+        <div class="notification">
+          <button class="notify-button">
+            <img class="notify-icon" src="Resources/icons/notifications.svg" />
+            <div class="tooltips">Notifications</div>
+          </button>
+          <span class="notify-count">5</span>
+        </div>
         <button class="avtar-button">
           <img class="profile-icon" src="Resources/icons/profile-image.jpg" />
         </button>
@@ -82,5 +95,112 @@
         <span class="you-text">You</span>
       </div>
     </div>
+
+    <!-- recommendation chipset contents -->
+    <div class="chipset-container">
+      <button class="chipset-active">All</button>
+      <button class="chipsets">Gaming</button>
+      <button class="chipsets">Film criticisms</button>
+      <button class="chipsets">Trailers</button>
+      <button class="chipsets">Computers</button>
+      <button class="chipsets">Sketch comedy</button>
+      <button class="chipsets">Cooking shows</button>
+      <button class="chipsets">HTML</button>
+      <button class="chipsets">Mixes</button>
+      <button class="chipsets">Music</button>
+      <button class="chipsets">AI</button>
+      <button class="chipsets">News</button>
+      <button class="chipsets">Role-Playing</button>
+
+      <!-- Arrow back icon -->
+      <div class="right-back-arrow">
+        <button class="back">
+          <img class="back-arrow" src="Resources/icons/back-arrow.svg" />
+        </button>
+      </div>
+    </div>
+
+    <!-- video contents starts from here -->
+    <div class="video-contents">
+      <div class="video-card">
+        <img class="thumbnail" src="Resources/thumbnails/thumbnail-1.webp">
+        <div class="timestamp">14:20</div>
+        <div class="video-details">
+          <img class="channel-img" src="Resources/channel-pictures/channel-1.jpeg">
+          <div class="Video-desc">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="channel-about">Marques Brownlee</p>
+            <p class="channel-about">4.2M views&nbsp;&#x2022;&nbsp;2 years ago</p>
+          </div>
+        </div>
+      </div>  
+
+      <div class="video-card">
+        <img class="thumbnail" src="Resources/thumbnails/thumbnail-2.webp">
+        <div class="timestamp">8:22</div>
+        <div class="video-details">
+          <img class="channel-img" src="Resources/channel-pictures/channel-2.jpeg">
+          <div class="Video-desc">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="channel-about">Markiplier</p>
+            <p class="channel-about">19M views&nbsp;&#x2022;&nbsp;4 years ago</p>
+          </div>
+        </div>
+      </div>  
+
+      <div class="video-card">
+        <img class="thumbnail" src="Resources/thumbnails/thumbnail-3.webp">
+        <div class="timestamp">9:13</div>
+        <div class="video-details">
+          <img class="channel-img" src="Resources/channel-pictures/channel-3.jpeg">
+          <div class="Video-desc">
+            <p class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</p>
+            <p class="channel-about">SSSniperWolf</p>
+            <p class="channel-about">12M views&nbsp;&#x2022;&nbsp;1 years ago</p>
+          </div>
+        </div>
+      </div>    
+
+      <div class="video-card">
+        <img class="thumbnail" src="Resources/thumbnails/thumbnail-4.webp">
+        <div class="timestamp">22:09</div>
+        <div class="video-details">
+          <img class="channel-img" src="Resources/channel-pictures/channel-4.jpeg">
+          <div class="Video-desc">
+            <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+            <p class="channel-about">Veritasium</p>
+            <p class="channel-about">18M views&nbsp;&#x2022;&nbsp;4 months ago</p>
+          </div>
+        </div>
+      </div>  
+
+      <div class="video-card">
+        <img class="thumbnail" src="Resources/thumbnails/thumbnail-5.webp">
+        <div class="timestamp">11:17</div>
+        <div class="video-details">
+          <img class="channel-img" src="Resources/channel-pictures/channel-5.jpeg">
+          <div class="Video-desc">
+            <p class="video-title">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+            <p class="channel-about">CS Dojo</p>
+            <p class="channel-about">519K views&nbsp;&#x2022;&nbsp;5 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <img class="thumbnail" src="Resources/thumbnails/thumbnail-6.webp">
+        <div class="timestamp">19:59</div>
+        <div class="video-details">
+          <img class="channel-img" src="Resources/channel-pictures/channel-6.jpeg">
+          <div class="Video-desc">
+            <p class="video-title">Anything You Can Fit In The Circle I&apos;ll Pay For</p>
+            <p class="channel-about">MrBeast</p>
+            <p class="channel-about">200M views&nbsp;&#x2022;&nbsp;1 year ago</p>
+          </div>
+        </div>
+      </div>
+     </div>
+
+
   </body>
 </html>

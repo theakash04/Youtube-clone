@@ -1,0 +1,79 @@
+.chipset-container{
+  position:fixed;
+  top: 56px;
+  left: 72px;
+  right:0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 24px;
+  background-color: var(--body-bgcolor);
+  z-index: 90;
+}
+.chipsets{
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 12px;
+  margin: 12px 12px 12px 0;
+  height: 32px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--buttons);
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: 20px;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  min-width: 12px;
+  outline-color: var(--text-color);
+}
+.right-back-arrow{
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 106px;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3),rgb(255, 255, 255),rgba(255, 255, 255), rgba(255, 255, 255), rgb(255, 255, 255));
+}
+.back{
+  position: absolute;
+  right: 10px;
+  background-color: var(--body-bgcolor);
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+
+}
+.back-arrow{
+  height: 20px;
+}
+
+
+/* Active chips style */
+.chipset-active{
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 12px;
+  margin: 12px 12px 12px 0;
+  height: 32px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: var(--body-bgcolor);
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: 20px;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  min-width: 12px;
+  outline-color: var(--text-color);
+  outline-style: none;
+}
