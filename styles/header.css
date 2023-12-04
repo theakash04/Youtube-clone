@@ -1,0 +1,146 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  background-color: var(--body-bgcolor);
+}
+
+/* Left section */
+.left-section{
+  display: flex;
+  margin-left: 16px;
+  align-items: center;
+}
+.menu-logo{
+  height: 24px;
+  margin: 8px;
+  cursor: pointer;
+}
+.youtube-logo{
+  height: 20.01px;
+  padding: 18px 14px 18px 16px;
+  cursor: pointer;
+}
+
+/* middle search section */
+.center{
+  flex: 1;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 50px;
+}
+.middle-head{
+  display: flex;
+  flex: 1;
+  height: 38.6333px;
+  background-color: var(--bgcolor);
+  align-items: center;
+  padding-left: 20px;
+  /* box-shadow:inset 1px 2px 5px #ffffff; */
+}
+/* border style middle section */
+.middle-head{
+  border: 1px solid var(--border-color);
+  border-top-left-radius: 19.31665px;
+  border-bottom-left-radius: 19.31665px;
+}
+.search-box{
+  flex: 1;
+  outline: none;
+  height: 26px;
+  border: none;
+  background-color: var(--bgcolor);
+  color:  var(--text-color);
+  font-size: 18px;
+  width: 0;         /* it is set so the default value of input element cancel in web and can shrink all  */
+}
+.search-box::placeholder{
+  font-family: Roboto, arial;
+  font-size: 16px;
+  color: var(--search-box-text);
+}
+.search-button{
+  height: 39.633px;
+  width: 70px;
+  background-color: var(--bgcolor);
+  padding: 1px 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* border style of search box */
+.search-button{
+  border-left: none;
+  border-right: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.search-icon{
+  height: 26px;
+}
+.voice-search{
+  height: 40px;
+  width: 40px;
+  background-color: var(--buttons);
+  border-radius: 20px;
+  border: none;
+  margin-left: 18px;
+  outline: none;
+  cursor: pointer;
+}
+.voice-search-icon{
+  height: 24px;
+  margin-top: 4px;
+}
+
+/* right section */
+.right-section{
+  display: flex;
+  /* width: 225px; */
+  margin-right: 22px;
+  align-items: center;
+  justify-content: end;
+  column-gap: 12.6px;
+}
+.upload-button{
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  border-radius: 50px;
+}
+.upload-icon{
+  height: 24px;
+}
+.notify-button{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+.notify-icon{
+  height: 24px;
+}
+.avtar-button{
+  width: 48px;
+  height: 36px;
+  padding: 2px 6px;
+  /* margin:0 10px; */
+}
+/* border section of right side buttons */
+.avtar-button,.notify-button,.upload-button{
+  border: none;
+  background-color: var(--body-bgcolor);
+  cursor: pointer;
+}
+.profile-icon{
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+}
