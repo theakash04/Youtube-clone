@@ -25,7 +25,7 @@ You can view a live demo of the YouTube clone [here](#).
 To get started with this project, you can clone the repository using the following command:
 
 ```bash
-git clone https://github.com/theaksh04/youtube-clone.git
+git clone https://github.com/theakash04/Youtube-clone.git
 ```
 
 ## Usage
