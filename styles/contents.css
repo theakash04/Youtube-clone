@@ -82,8 +82,8 @@
   color: var(--body-bgcolor);
   font-size: 13px;
   max-height: 1.3rem;
-  right: 17px;
-  bottom: 120px;
+  right: 5px;
+  bottom: 5px;
   padding: 3px;
   border-radius: 5px;
 }

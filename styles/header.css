@@ -74,7 +74,8 @@
 }
 .search-button{
   position: relative;
-  height: 39.633px;
+  min-height: 39.633px;
+  max-height: 42px;
   width: 70px;
   background-color: var(--search);
   padding: 1px 8px;

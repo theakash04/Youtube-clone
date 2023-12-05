@@ -1,3 +1,13 @@
+@media (min-width: 1620px){
+  .video-contents{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .search-button{
+    min-height: 41.633px;
+    max-height: 42px;
+  }
+}
+
 @media (max-width:1080px){
   .video-contents{
     grid-template-columns: 1fr 1fr;
